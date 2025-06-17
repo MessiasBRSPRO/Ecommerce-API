@@ -1,0 +1,6 @@
+CREATE TABLE products(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    price DOUBLE PRECISION NOT NULL,
+    qtd_estoque INTEGER NOT NULL
+);
