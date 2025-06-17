@@ -1,4 +1,17 @@
 package com.messias.EcommerceAPI.DTOs;
 
-public record DTOProduct(Long id, String name, Double price, Integer qtdEstoque) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record DTOProduct(
+        Long id,
+
+        @NotBlank
+        String name,
+
+        @NotNull
+        Double price,
+
+        @NotNull
+        Integer qtdEstoque) {
 }
